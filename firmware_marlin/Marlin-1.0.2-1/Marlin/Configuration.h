@@ -402,7 +402,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
   //X:42.00 Y:4.00 Z:25.30 E:0.00 Count X: 42.00 Y:4.00 Z:25.30
   #define X_PROBE_OFFSET_FROM_EXTRUDER -26 //X:41.00 Y:20.00 Z:15.60
   #define Y_PROBE_OFFSET_FROM_EXTRUDER -28
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -1.6 //restar aca, acerca el extrusor a la cama
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -1.5 //restar aca, acerca el extrusor a la cama
 
   #define Z_RAISE_BEFORE_HOMING 4       // (in mm) Raise Z before homing (G28) for Probe Clearance.
                                         // Be sure you have this distance over your Z_MAX_POS in case
