@@ -186,7 +186,7 @@
 // If your configuration is significantly different than this and you don't understand the issues involved, you probably
 // shouldn't use bed PID until someone else verifies your hardware works.
 // If this is enabled, find your own PID constants below.
-#define PIDTEMPBED
+//#define PIDTEMPBED
 //
 //#define BED_LIMIT_SWITCHING
 
@@ -338,7 +338,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 // TODO esto quizas deberia ser mas
 #define X_MAX_POS 195
 #define X_MIN_POS 0
-#define Y_MAX_POS 183
+#define Y_MAX_POS 283
 #define Y_MIN_POS 0
 #define Z_MAX_POS 180
 #define Z_MIN_POS 0
@@ -375,7 +375,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
     // set the rectangle in which to probe
     #define LEFT_PROBE_BED_POSITION 30
     #define RIGHT_PROBE_BED_POSITION 160
-    #define BACK_PROBE_BED_POSITION 160
+    #define BACK_PROBE_BED_POSITION 260
     #define FRONT_PROBE_BED_POSITION 30
 
      // set the number of grid points per dimension
