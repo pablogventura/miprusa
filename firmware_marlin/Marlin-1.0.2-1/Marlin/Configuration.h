@@ -188,13 +188,13 @@
 // If this is enabled, find your own PID constants below.
 //#define PIDTEMPBED
 //
-//#define BED_LIMIT_SWITCHING
+#define BED_LIMIT_SWITCHING
 
 // This sets the max power delivered to the bed, and replaces the HEATER_BED_DUTY_CYCLE_DIVIDER option.
 // all forms of bed control obey this (PID, bang-bang, bang-bang with hysteresis)
 // setting this to anything other than 255 enables a form of PWM to the bed just like HEATER_BED_DUTY_CYCLE_DIVIDER did,
 // so you shouldn't use it unless you are OK with PWM on your bed.  (see the comment on enabling PIDTEMPBED)
-#define MAX_BED_POWER 255 // limits duty cycle to bed; 255=full current
+#define MAX_BED_POWER 256 // limits duty cycle to bed; 255=full current
 
 #ifdef PIDTEMPBED
 //120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
@@ -402,7 +402,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
   //X:42.00 Y:4.00 Z:25.30 E:0.00 Count X: 42.00 Y:4.00 Z:25.30
   #define X_PROBE_OFFSET_FROM_EXTRUDER -26 //X:41.00 Y:20.00 Z:15.60
   #define Y_PROBE_OFFSET_FROM_EXTRUDER -28
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -0.6 //restar aca, acerca el extrusor a la cama
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -0.5 //restar aca, acerca el extrusor a la cama
 
   #define Z_RAISE_BEFORE_HOMING 4       // (in mm) Raise Z before homing (G28) for Probe Clearance.
                                         // Be sure you have this distance over your Z_MAX_POS in case
