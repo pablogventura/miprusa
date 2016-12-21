@@ -56,12 +56,12 @@
 #
 
 # This defines the board to compile for (see boards.h for your board's ID)
-HARDWARE_MOTHERBOARD ?= 11
+HARDWARE_MOTHERBOARD ?= 33
 
 # Arduino source install directory, and version number
 # On most linuxes this will be /usr/share/arduino
-ARDUINO_INSTALL_DIR  ?= ${HOME}/Arduino
-ARDUINO_VERSION      ?= 106
+ARDUINO_INSTALL_DIR  ?= ${HOME}/arduino-1.6.12
+ARDUINO_VERSION      ?= 10612
 
 # You can optionally set a path to the avr-gcc tools. Requires a trailing slash. (ex: /usr/local/avr-gcc/bin)
 AVR_TOOLS_PATH ?=
@@ -70,11 +70,11 @@ AVR_TOOLS_PATH ?=
 UPLOAD_RATE        ?= 57600
 AVRDUDE_PROGRAMMER ?= arduino
 # on most linuxes this will be /dev/ttyACM0 or /dev/ttyACM1 
-UPLOAD_PORT        ?= /dev/ttyUSB0
+UPLOAD_PORT        ?= /dev/ttyACM0
 
 #Directory used to build files in, contains all the build files, from object files to the final hex file
 #on linux it is best to put an absolute path like /home/username/tmp .
-BUILD_DIR          ?= applet
+BUILD_DIR          ?= /home/pablo/Escritorio/impresora3d/firmware_marlin/Marlin-1.1.0-RC8/Marlin/applet
 
 # This defines whether Liquid_TWI2 support will be built
 LIQUID_TWI2        ?= 0
