@@ -8,13 +8,21 @@ comandos="sudo service octoprint stop; export DISPLAY=:0;cd miprusa/firmware_mar
 output = StringIO.StringIO()
 
 c=pexpect.spawn("ssh linaro@192.168.1.137 " + comandos, timeout=200)
-
 c.logfile=output
+c.sendline("linaro")
+c.expect(["done"])
+print "Octoprint detenido"
+if c.expect(["Updating", "up-to-date"]) == 0:
+    print "Actualiando repo"
+else:
+    print "El repo esta al dia"
+    
+c.expect(["done"])
+print "Octoprint inciado"
 
 assert c.expect(["password: "]) == 0
 
-c.sendline("linaro")
 c.expect(["listo"])
 
-
+print("*" *80)
 print(output.getvalue())
