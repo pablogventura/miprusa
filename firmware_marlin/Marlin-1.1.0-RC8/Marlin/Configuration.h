@@ -328,9 +328,9 @@
   //#define  DEFAULT_Ki 2.25
   //#define  DEFAULT_Kd 440
 
-  #define  DEFAULT_Kp 13.50
-  #define  DEFAULT_Ki 0.66
-  #define  DEFAULT_Kd 68.56
+    #define  DEFAULT_Kp 30.40
+    #define  DEFAULT_Ki 2.15
+    #define  DEFAULT_Kd 107.59
 
 #endif // PIDTEMP
 
@@ -583,7 +583,7 @@
 //    O-- FRONT --+
 //  (0,0)
 #define X_PROBE_OFFSET_FROM_EXTRUDER 0   // X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER -35   // Y offset: -front +behind [the nozzle]
+#define Y_PROBE_OFFSET_FROM_EXTRUDER 56   // Y offset: -front +behind [the nozzle]
 #define Z_PROBE_OFFSET_FROM_EXTRUDER -0.5  // Z offset: -below +above  [the nozzle] //restar aca, acerca el extrusor a la cama
 
 // X and Y axis travel speed (mm/m) between probes
@@ -814,8 +814,8 @@
   // Set the boundaries for probing (where the probe can reach).
   #define LEFT_PROBE_BED_POSITION (X_MIN_POS + 30)
   #define RIGHT_PROBE_BED_POSITION (X_MAX_POS - 30)
-  #define FRONT_PROBE_BED_POSITION (Y_MIN_POS + 20)
-  #define BACK_PROBE_BED_POSITION (Y_MAX_POS - 40)
+  #define FRONT_PROBE_BED_POSITION (Y_MIN_POS + 60)
+  #define BACK_PROBE_BED_POSITION (Y_MAX_POS - 30)
 
   // The Z probe minimum outer margin (to validate G29 parameters).
   #define MIN_PROBE_EDGE 10
