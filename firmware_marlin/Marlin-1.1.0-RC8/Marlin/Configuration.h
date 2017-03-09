@@ -143,7 +143,7 @@
 
 // This defines the number of extruders
 // :[1, 2, 3, 4]
-#define EXTRUDERS 3
+#define EXTRUDERS 2
 
 // Enable if your E steppers or extruder gear ratios are not identical
 //#define DISTINCT_E_FACTORS
@@ -462,7 +462,7 @@
 #define Z_MIN_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
 #define X_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #define Y_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
-#define Z_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
+#define Z_MAX_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
 #define Z_MIN_PROBE_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
