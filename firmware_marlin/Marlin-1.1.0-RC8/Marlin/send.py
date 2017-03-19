@@ -3,11 +3,12 @@
 
 import pexpect
 import StringIO
-
-comandos = "sudo service octoprint stop; "
+comandos = "cd miprusa/;"
+comandos+= "git pull; "
+comandos+= "cd; "
+comandos+= "sudo service octoprint stop; "
 comandos+= "export DISPLAY=:0; "
 comandos+= "cd arduino-1.8.0; "
-comandos+= "git pull; "
 comandos+= "./arduino --upload ../miprusa/firmware_marlin/Marlin-1.1.0-RC8/Marlin/Marlin.ino; "
 comandos+= "sudo service octoprint start; "
 comandos+= "echo listo"
