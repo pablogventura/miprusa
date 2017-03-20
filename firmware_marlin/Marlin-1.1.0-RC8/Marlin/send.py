@@ -3,21 +3,22 @@
 
 import pexpect
 import StringIO
+from getpass import getpass
 comandos = "cd miprusa/;"
 comandos+= "git pull; "
 comandos+= "cd; "
 comandos+= "sudo service octoprint stop; "
 comandos+= "export DISPLAY=:0; "
-comandos+= "cd arduino-1.8.0; "
+comandos+= "cd arduino-1.8.1; "
 comandos+= "./arduino --upload ../miprusa/firmware_marlin/Marlin-1.1.0-RC8/Marlin/Marlin.ino; "
 comandos+= "sudo service octoprint start; "
 comandos+= "echo listo"
 output = StringIO.StringIO()
 
-c=pexpect.spawn("ssh linaro@192.168.2.137 " + comandos, timeout=200)
+c=pexpect.spawn("ssh pablo@192.168.2.137 " + comandos, timeout=200)
 c.logfile=output
 assert c.expect(["password: "]) == 0
-c.sendline("linaro")
+c.sendline(getpass("contraseña: "))
 
 
 c.expect(["listo"])
