@@ -23,10 +23,6 @@
 #ifndef PINS_H
 #define PINS_H
 
-#define E2_STEP_PIN        64
-#define E2_DIR_PIN         59
-#define E2_ENABLE_PIN      44
-
 #if MB(GEN7_CUSTOM)
   #include "pins_GEN7_CUSTOM.h"
 #elif MB(GEN7_12)
