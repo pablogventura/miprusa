@@ -483,7 +483,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 145 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 145.5 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -874,7 +874,7 @@
   #define UBL_PROBE_PT_2_Y 60
   #define UBL_PROBE_PT_3_X 180
   #define UBL_PROBE_PT_3_Y 60
-  //#define UBL_G26_MESH_EDITING    // Enable G26 mesh editing
+  #define UBL_G26_MESH_EDITING    // Enable G26 mesh editing
 
 #elif ENABLED(MESH_BED_LEVELING)
 
