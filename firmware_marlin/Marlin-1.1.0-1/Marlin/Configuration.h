@@ -1066,14 +1066,14 @@
 
 #if ENABLED(NOZZLE_CLEAN_FEATURE)
   // Default number of pattern repetitions
-  #define NOZZLE_CLEAN_STROKES  2
+  #define NOZZLE_CLEAN_STROKES  10
 
   // Default number of triangles
   #define NOZZLE_CLEAN_TRIANGLES  3
 
   // Specify positions as { X, Y, Z }
-  #define NOZZLE_CLEAN_START_POINT { -10, 35, 8}
-  #define NOZZLE_CLEAN_END_POINT   {-10, 85, 8}
+  #define NOZZLE_CLEAN_START_POINT { -10, 35, 6}
+  #define NOZZLE_CLEAN_END_POINT   {-10, 85, 6}
 
   // Circular pattern radius
   #define NOZZLE_CLEAN_CIRCLE_RADIUS 6.5
