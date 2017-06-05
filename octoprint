@@ -1,0 +1,103 @@
+   - name: Alimentacion
+     type: section
+     children:
+       - name: Encender
+         type: command
+         command: M80
+       - name: Apagar
+         type: command
+         command: M81
+   - name: Mezcla
+     type: section
+     children:
+       - name: Limpiar punta
+         type: command
+         command: G12
+       - name: Cambiar filamento
+         type: command
+         command: M600
+   - name: Filamento
+     type: section
+     children:
+       - name: Limpiar punta
+         type: command
+         command: G12
+       - name: Cambiar filamento
+         type: command
+         command: M600
+
+
+
+
+
+
+
+
+
+
+  - name: Mezcla
+    type: section
+    children: 
+    - command: M220 S%(speed)s
+      name: Extrusor 1
+      type: parametric_command
+      input: 
+      - name: (0-200%)
+        parameter: speed
+        default: 100
+    - command: M221 S%(flow)s
+      name: Flow rate
+      type: parametric_command
+      input: 
+      - name: (0-200%)
+        parameter: flow
+        default: 100
+
+
+
+- children:
+  - commands:
+    - M206 T3 P145 X%(maxLength)s
+    - M206 T3 P149 X%(maxLength)s
+    - M206 T3 P153 X%(maxLength)s
+    - M500
+    - G28
+    input:
+    - default: null
+      name: Max Z height
+      parameter: maxLength
+    name: Set XYZ max length
+    type: parametric_commands
+  - commands:
+    - M206 T%(type)s P%(location)s X%(value)s
+    - M500
+    - G28
+    input:
+    - default: null
+      name: Type
+      parameter: type
+    - default: null
+      name: Location
+      parameter: location
+    - default: null
+      name: Value
+      parameter: value
+    name: EEPROM
+    type: parametric_commands
+  - commands:
+    - M206 T3 P218 X%(pgain)s
+    - M206 T3 P222 X%(igain)s
+    - M206 T3 P226 X%(dgain)s
+    - M500
+    input:
+    - default: null
+      name: P-gain
+      parameter: pgain
+    - default: null
+      name: I-gain
+      parameter: igain
+    - default: null
+      name: D-gain
+      parameter: dgain
+    name: Update PID
+    type: parametric_commands
