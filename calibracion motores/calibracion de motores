@@ -1,5 +1,7 @@
 A = 2 x V para los drv8825
 
+800
+
 60-70% de su corriente nominal
 
 ##########################################
@@ -16,3 +18,5 @@ v=0.595 (maximo 70%)
 
 v=0.36 (minimo 60%)
 v=0.42 (maximo 70%)
+
+el zeta lleva 1.5 * lo demas

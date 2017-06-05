@@ -159,7 +159,7 @@
 // Extruder runout prevention.
 // If the machine is idle and the temperature over MINTEMP
 // then extrude some filament every couple of SECONDS.
-#define EXTRUDER_RUNOUT_PREVENT
+//#define EXTRUDER_RUNOUT_PREVENT
 #if ENABLED(EXTRUDER_RUNOUT_PREVENT)
   #define EXTRUDER_RUNOUT_MINTEMP 190
   #define EXTRUDER_RUNOUT_SECONDS 30
@@ -768,7 +768,7 @@
  * Requires an LCD display.
  * This feature is required for the default FILAMENT_RUNOUT_SCRIPT.
  */
-//#define FILAMENT_CHANGE_FEATURE
+#define FILAMENT_CHANGE_FEATURE
 #if ENABLED(FILAMENT_CHANGE_FEATURE)
   #define FILAMENT_CHANGE_X_POS 100             // X position of hotend
   #define FILAMENT_CHANGE_Y_POS 10             // Y position of hotend
