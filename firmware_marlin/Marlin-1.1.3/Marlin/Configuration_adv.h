@@ -152,7 +152,7 @@
 // hot end to reach the target temperature, but the time it takes to reach
 // the minimum temperature your thermistor can read. The lower the better/safer.
 // This shouldn't need to be more than 30 seconds (30000)
-#define MILLISECONDS_PREHEAT_TIME 30000
+#define MILLISECONDS_PREHEAT_TIME 45000
 
 // @section extruder
 
