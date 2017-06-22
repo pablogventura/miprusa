@@ -656,7 +656,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 12   // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 61   // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.1 // Z offset: -below +above  [the nozzle] restar aca, acerca el extrusor a la cama
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -2   // Z offset: -below +above  [the nozzle] restar aca, acerca el extrusor a la cama
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
