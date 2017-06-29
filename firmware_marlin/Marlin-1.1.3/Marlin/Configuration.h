@@ -329,9 +329,10 @@
   //#define  DEFAULT_Kd 440
 
   //Auto Pid
-  #define  DEFAULT_Kp 27.20
-  #define  DEFAULT_Ki 1.70
-  #define  DEFAULT_Kd 108.94
+
+  #define  DEFAULT_Kp 18.26
+  #define  DEFAULT_Ki 0.92
+  #define  DEFAULT_Kd 90.52
 
 #endif // PIDTEMP
 
