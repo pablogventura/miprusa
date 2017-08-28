@@ -14,11 +14,11 @@ comandos+= "sudo service octoprint start; "
 comandos+= "echo listo"
 output = StringIO.StringIO()
 
-c=pexpect.spawn("ssh pi@192.168.2.186 " + comandos, timeout=400)
+c=pexpect.spawn("ssh pi@192.168.2.186 " + comandos, timeout=60*10)
 c.logfile=output
 assert c.expect(["password: "]) == 0
 c.sendline(getpass("contraseña: "))
-
+print output.getvalue()
 
 c.expect(["listo"])
 
