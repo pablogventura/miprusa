@@ -336,9 +336,14 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   //Autopid diamond
-  #define  DEFAULT_Kp 21.85
-  #define  DEFAULT_Ki 1.24
-  #define  DEFAULT_Kd 96.19
+  //#define  DEFAULT_Kp 21.85
+  //#define  DEFAULT_Ki 1.24
+  //#define  DEFAULT_Kd 96.19
+
+  //Autopid vulcano
+  #define  DEFAULT_Kp 10.75
+  #define  DEFAULT_Ki 0.64
+  #define  DEFAULT_Kd 45.36
 
   // Ultimaker
   //#define  DEFAULT_Kp 22.2
@@ -766,11 +771,11 @@
 // @section machine
 
 // Travel limits after homing (units are in mm)
-#define X_MIN_POS 7
+#define X_MIN_POS -20
 #define Y_MIN_POS -33
 #define Z_MIN_POS 0
 #define X_MAX_POS 300
-#define Y_MAX_POS 170
+#define Y_MAX_POS 200
 #define Z_MAX_POS 230
 
 // If enabled, axes won't move below MIN_POS in response to movement commands.
