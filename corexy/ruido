@@ -1,0 +1,42 @@
+soundmeter -c -s 60 # estadistica de un minuto de ruido desde la parte interna con la webcam
+con las puertas cerradas
+
+
+24/09/17 19.42 
+Collected result:
+    min:       5637
+    max:       9871
+    avg:       6767
+
+despues de casi 4 horas de impresion
+Collected result:
+    min:       6155
+    max:       9836
+    avg:       6998
+la maquina apagada a la noche
+Collected result:
+    min:        281
+    max:        623
+    avg:        351
+
+encendida, sin imprimir y con los diodos
+Collecting RMS values...
+      3947  Timeout
+Collected result:
+    min:       3364
+    max:       7219
+    avg:       4822
+
+encendida, sin imprimir con diodos y todo bien agarrado
+Collected result:
+    min:       3379
+    max:       4002
+    avg:       3682
+
+
+imprimiendo un cubo, con los diodos y aceitados los ventiladores
+Collected result:
+    min:       5642
+    max:       8748
+    avg:       8021
+
