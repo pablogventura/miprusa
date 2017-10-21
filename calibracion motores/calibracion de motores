@@ -20,3 +20,15 @@ v=0.36 (minimo 60%)
 v=0.42 (maximo 70%)
 
 el zeta lleva 1.5 * lo demas
+
+##########################################
+ya con los tmc el calculo es:
+VREF = (I * 2.5V) / 1.77A
+
+grandes:
+(1.2 * 2.5) / 1.77 = 1.694915254237288
+
+chiquitos:
+(1.7 * 2.5) / 1.77 = 2.401129943502825
+
+

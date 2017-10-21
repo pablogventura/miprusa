@@ -1,0 +1,18 @@
+hay que cortar todos los pines desde el nc al lado de step al cfg1 para que la ramps no tenga nada que ver con las configuraciones de pines.
+
+
+dir     gnd
+step    vio
+nc      1b
+nc      1a
+cfg3    2a
+cfg2    2b
+cfg1    gnd
+en      vm
+
+se tiene que conectar cfg1 al gnd, para lo cual hay que poner un cablecito entre ellos y conectar al lado del pin el jumper para que realmente afecte al chip, esto es para entrar en modo cycle
+
+despues se conectan segun la foto para configurar el modo cycle.
+
+buena info:
+https://eewiki.net/display/Motley/How+to+Drive+a+Stepper+Motor

@@ -40,3 +40,23 @@ Collected result:
     max:       8748
     avg:       8021
 
+
+Imprimiendo una iguana, despues del lio con los tmc
+Collected result:
+    min:       4392
+    max:       7763
+    avg:       4764
+
+inmprimiendo un cubo, despues del lio con los tmc
+Collected result:
+    min:       4751
+    max:      11028
+    avg:       6233
+
+
+inmprimiendo un cubo, despues de lograr reconfigurar los tmc
+Collected result:
+    min:       4375
+    max:       6673
+    avg:       5267
+
