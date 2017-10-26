@@ -340,10 +340,11 @@
   //#define  DEFAULT_Ki 1.24
   //#define  DEFAULT_Kd 96.19
 
-  //Autopid vulcano
-  #define  DEFAULT_Kp 10.75
-  #define  DEFAULT_Ki 0.64
-  #define  DEFAULT_Kd 45.36
+  //Autopid vulcano y protector de silicona
+  
+  #define  DEFAULT_Kp 14.17
+  #define  DEFAULT_Ki 1.03
+  #define  DEFAULT_Kd 48.77
 
   // Ultimaker
   //#define  DEFAULT_Kp 22.2
