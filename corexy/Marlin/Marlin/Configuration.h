@@ -90,7 +90,7 @@
 // boot image unmodified. For an example have a look at the bq Hephestos 2
 // example configuration folder.
 //
-//#define SHOW_CUSTOM_BOOTSCREEN
+#define SHOW_CUSTOM_BOOTSCREEN
 // @section machine
 
 /**
@@ -532,7 +532,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 50, 70 }
+#define DEFAULT_MAX_FEEDRATE          { 400, 400, 50, 70 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -540,7 +540,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 100, 10000 }
+#define DEFAULT_MAX_ACCELERATION      { 5000, 5000, 100, 10000 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -562,10 +562,10 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 0.0
-#define DEFAULT_YJERK                 0.0
-#define DEFAULT_ZJERK                  0.4
-#define DEFAULT_EJERK                  1.0
+#define DEFAULT_XJERK                 20.0
+#define DEFAULT_YJERK                 20.0
+#define DEFAULT_ZJERK                  1.0
+#define DEFAULT_EJERK                  5.0
 
 
 //===========================================================================
@@ -1282,7 +1282,7 @@
 //
 // Add individual axis homing items (Home X, Home Y, and Home Z) to the LCD menu.
 //
-//#define INDIVIDUAL_AXIS_HOMING_MENU
+#define INDIVIDUAL_AXIS_HOMING_MENU
 
 //
 // SPEAKER/BUZZER
