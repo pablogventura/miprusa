@@ -960,7 +960,7 @@
   #define Y_CURRENT         1000
   #define Y_MICROSTEPS        16
 
-  #define Z_CURRENT         1000
+  #define Z_CURRENT         750
   #define Z_MICROSTEPS        16
 
   //#define X2_CURRENT      1000
@@ -1006,7 +1006,7 @@
    * M911 - Report stepper driver overtemperature pre-warn condition.
    * M912 - Clear stepper driver overtemperature pre-warn condition flag.
    */
-  //#define AUTOMATIC_CURRENT_CONTROL
+  #define AUTOMATIC_CURRENT_CONTROL
 
   #if ENABLED(AUTOMATIC_CURRENT_CONTROL)
     #define CURRENT_STEP          50  // [mA]
@@ -1020,7 +1020,7 @@
    * STEALTHCHOP needs to be enabled.
    * M913 X/Y/Z/E to live tune the setting
    */
-  //#define HYBRID_THRESHOLD
+  #define HYBRID_THRESHOLD
 
   #define X_HYBRID_THRESHOLD     100  // [mm/s]
   #define X2_HYBRID_THRESHOLD    100
