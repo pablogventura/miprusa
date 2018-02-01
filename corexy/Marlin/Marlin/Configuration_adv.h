@@ -960,7 +960,7 @@
   #define Y_CURRENT         1000
   #define Y_MICROSTEPS        16
 
-  #define Z_CURRENT         750
+  #define Z_CURRENT         900
   #define Z_MICROSTEPS        16
 
   //#define X2_CURRENT      1000
@@ -1026,8 +1026,8 @@
   #define X2_HYBRID_THRESHOLD    100
   #define Y_HYBRID_THRESHOLD     100
   #define Y2_HYBRID_THRESHOLD    100
-  #define Z_HYBRID_THRESHOLD       4
-  #define Z2_HYBRID_THRESHOLD      4
+  #define Z_HYBRID_THRESHOLD       30
+  #define Z2_HYBRID_THRESHOLD      30
   #define E0_HYBRID_THRESHOLD     30
   #define E1_HYBRID_THRESHOLD     30
   #define E2_HYBRID_THRESHOLD     30
