@@ -1005,7 +1005,7 @@
   //#define X2_IS_TMC2130
   //#define Y_IS_TMC2130
   //#define Y2_IS_TMC2130
-  #define Z_IS_TMC2130
+  //#define Z_IS_TMC2130
   //#define Z2_IS_TMC2130
   #define E0_IS_TMC2130
   //#define E1_IS_TMC2130
