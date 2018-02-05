@@ -1003,7 +1003,7 @@
   // CHOOSE YOUR MOTORS HERE, THIS IS MANDATORY
   //#define X_IS_TMC2130
   //#define X2_IS_TMC2130
-  #define Y_IS_TMC2130
+  //#define Y_IS_TMC2130
   //#define Y2_IS_TMC2130
   #define Z_IS_TMC2130
   //#define Z2_IS_TMC2130
