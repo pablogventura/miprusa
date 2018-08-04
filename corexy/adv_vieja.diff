@@ -1,0 +1,120 @@
+diff --git a/corexy/Marlin/Marlin/Configuration_adv.h b/corexy/Marlin/Marlin/Configuration_adv.h
+index 9894f1b..3ed2a44 100644
+--- a/corexy/Marlin/Marlin/Configuration_adv.h
++++ b/corexy/Marlin/Marlin/Configuration_adv.h
+@@ -101,7 +101,7 @@
+ #if ENABLED(PIDTEMP)
+   // this adds an experimental additional term to the heating power, proportional to the extrusion speed.
+   // if Kc is chosen well, the additional required power due to increased melting should be compensated.
+-  #define PID_EXTRUSION_SCALING
++  //#define PID_EXTRUSION_SCALING
+   #if ENABLED(PID_EXTRUSION_SCALING)
+     #define DEFAULT_Kc (100) //heating power=Kc*(e_speed)
+     #define LPQ_MAX_LEN 50
+@@ -350,7 +350,7 @@
+ #define Y_HOME_BUMP_MM 5
+ #define Z_HOME_BUMP_MM 2
+ #define HOMING_BUMP_DIVISOR {2, 2, 4}  // Re-Bump Speed Divisor (Divides the Homing Feedrate)
+-#define QUICK_HOME  //if this is defined, if both x and y are to be homed, a diagonal move will be performed initially.
++//#define QUICK_HOME  //if this is defined, if both x and y are to be homed, a diagonal move will be performed initially.
+ 
+ // When G28 is called, this option will make Y home before X
+ //#define HOME_Y_BEFORE_X
+@@ -371,7 +371,7 @@
+ // Default stepper release if idle. Set to 0 to deactivate.
+ // Steppers will shut down DEFAULT_STEPPER_DEACTIVE_TIME seconds after the last move when DISABLE_INACTIVE_? is true.
+ // Time can be set by M18 and M84.
+-#define DEFAULT_STEPPER_DEACTIVE_TIME 60
++#define DEFAULT_STEPPER_DEACTIVE_TIME 120
+ #define DISABLE_INACTIVE_X true
+ #define DISABLE_INACTIVE_Y true
+ #define DISABLE_INACTIVE_Z true  // set to false if the nozzle will fall down on your printed part when print has finished.
+@@ -458,13 +458,13 @@
+ //#define LCD_INFO_MENU
+ 
+ // Scroll a longer status message into view
+-#define STATUS_MESSAGE_SCROLLING
++//#define STATUS_MESSAGE_SCROLLING
+ 
+ // On the Info Screen, display XY with one decimal place when possible
+ //#define LCD_DECIMAL_SMALL_XY
+ 
+ // The timeout (in ms) to return to the status screen from sub-menus
+-#define LCD_TIMEOUT_TO_STATUS 45000
++//#define LCD_TIMEOUT_TO_STATUS 15000
+ 
+ #if ENABLED(SDSUPPORT)
+ 
+@@ -765,7 +765,7 @@
+ // enter the serial receive buffer, so they cannot be blocked.
+ // Currently handles M108, M112, M410
+ // Does not work on boards using AT90USB (USBCON) processors!
+-#define EMERGENCY_PARSER
++//#define EMERGENCY_PARSER
+ 
+ // Bad Serial-connections can miss a received command by sending an 'ok'
+ // Therefore some clients abort after 30 seconds in a timeout.
+@@ -929,7 +929,7 @@
+  * the hardware SPI interface on your board and define the required CS pins
+  * in your `pins_MYBOARD.h` file. (e.g., RAMPS 1.4 uses AUX3 pins `X_CS_PIN 53`, `Y_CS_PIN 49`, etc.).
+  */
+-#define HAVE_TMC2130
++//#define HAVE_TMC2130
+ 
+ #if ENABLED(HAVE_TMC2130)
+ 
+@@ -938,7 +938,7 @@
+   //#define X2_IS_TMC2130
+   //#define Y_IS_TMC2130
+   //#define Y2_IS_TMC2130
+-  #define Z_IS_TMC2130
++  //#define Z_IS_TMC2130
+   //#define Z2_IS_TMC2130
+   //#define E0_IS_TMC2130
+   //#define E1_IS_TMC2130
+@@ -954,13 +954,13 @@
+   #define HOLD_MULTIPLIER    0.5  // Scales down the holding current from run current
+   #define INTERPOLATE          1  // Interpolate X/Y/Z_MICROSTEPS to 256
+ 
+-  //#define X_CURRENT         1000  // rms current in mA. Multiply by 1.41 for peak current.
+-  //#define X_MICROSTEPS        16  // 0..256
++  #define X_CURRENT         1000  // rms current in mA. Multiply by 1.41 for peak current.
++  #define X_MICROSTEPS        16  // 0..256
+ 
+-  //#define Y_CURRENT         1000
+-  //#define Y_MICROSTEPS        16
++  #define Y_CURRENT         1000
++  #define Y_MICROSTEPS        16
+ 
+-  #define Z_CURRENT         900
++  #define Z_CURRENT         1000
+   #define Z_MICROSTEPS        16
+ 
+   //#define X2_CURRENT      1000
+@@ -1006,7 +1006,7 @@
+    * M911 - Report stepper driver overtemperature pre-warn condition.
+    * M912 - Clear stepper driver overtemperature pre-warn condition flag.
+    */
+-  #define AUTOMATIC_CURRENT_CONTROL
++  //#define AUTOMATIC_CURRENT_CONTROL
+ 
+   #if ENABLED(AUTOMATIC_CURRENT_CONTROL)
+     #define CURRENT_STEP          50  // [mA]
+@@ -1020,14 +1020,14 @@
+    * STEALTHCHOP needs to be enabled.
+    * M913 X/Y/Z/E to live tune the setting
+    */
+-  #define HYBRID_THRESHOLD
++  //#define HYBRID_THRESHOLD
+ 
+   #define X_HYBRID_THRESHOLD     100  // [mm/s]
+   #define X2_HYBRID_THRESHOLD    100
+   #define Y_HYBRID_THRESHOLD     100
+   #define Y2_HYBRID_THRESHOLD    100
+-  #define Z_HYBRID_THRESHOLD       30
+-  #define Z2_HYBRID_THRESHOLD      30
++  #define Z_HYBRID_THRESHOLD       4
++  #define Z2_HYBRID_THRESHOLD      4
+   #define E0_HYBRID_THRESHOLD     30
+   #define E1_HYBRID_THRESHOLD     30
+   #define E2_HYBRID_THRESHOLD     30
