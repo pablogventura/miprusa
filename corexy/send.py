@@ -8,13 +8,13 @@ comandos = "cd miprusa/;"
 comandos+= "git pull; "
 comandos+= "cd; "
 comandos+= "sudo service octoprint stop; "
-comandos+= "cd arduino-1.8.3; "
+comandos+= "cd arduino-1.8.5; "
 comandos+= "./arduino --upload ../miprusa/corexy/Marlin/Marlin/Marlin.ino; "
 comandos+= "sudo service octoprint start; "
 comandos+= "echo listo"
 output = StringIO.StringIO()
 
-c=pexpect.spawn("ssh pi@192.168.2.186 " + comandos, timeout=60*10)
+c=pexpect.spawn("ssh pi@impresora3d " + comandos, timeout=60*10)
 c.logfile=output
 assert c.expect(["password: "]) == 0
 c.sendline(getpass("contraseña: "))
