@@ -1164,6 +1164,22 @@
  *  - Compute AB     : SQRT(2*AC*AC+2*BD*BD-4*AD*AD)/2
  *  - XY_SKEW_FACTOR : TAN(PI/2-ACOS((AC*AC-AB*AB-AD*AD)/(2*AB*AD)))
  *
+###################################################
+#/usr/bin/python
+import math
+TAN = math.tan
+PI = math.pi
+ACOS = math.acos
+SQRT = math.sqrt
+
+AC =141.5
+BD =140.6
+AD =99.6
+
+AB=SQRT(2*AC*AC+2*BD*BD-4*AD*AD)/2
+
+print TAN(PI/2-ACOS((AC*AC-AB*AB-AD*AD)/(2*AB*AD)))
+###################################################
  * If desired, follow the same procedure for XZ and YZ.
  * Use these diagrams for reference:
  *
