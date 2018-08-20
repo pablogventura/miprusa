@@ -238,7 +238,7 @@
   // Power to steppers and heaters will need to be turned on with M80.
   #define PS_DEFAULT_OFF
 
-  #define AUTO_POWER_CONTROL        // Enable automatic control of the PS_ON pin
+  //#define AUTO_POWER_CONTROL        // Enable automatic control of the PS_ON pin
   #if ENABLED(AUTO_POWER_CONTROL)
     #define AUTO_POWER_FANS           // Turn on PSU if fans need power
     #define AUTO_POWER_E_FANS
