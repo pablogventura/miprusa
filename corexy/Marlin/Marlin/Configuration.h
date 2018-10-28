@@ -373,10 +373,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // vulcano
-  #define  DEFAULT_Kp 14.17
-  #define  DEFAULT_Ki 1.03
-  #define  DEFAULT_Kd 48.77
-
+  #define DEFAULT_Kp 23.61
+  #define DEFAULT_Ki 1.93
+  #define DEFAULT_Kd 72.06
   // MakerGear
   //#define DEFAULT_Kp 7.0
   //#define DEFAULT_Ki 0.1
@@ -424,9 +423,9 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define  DEFAULT_bedKp 172.86
-  #define  DEFAULT_bedKi 28.91
-  #define  DEFAULT_bedKd 258.43
+  #define DEFAULT_bedKp 200.50
+  #define DEFAULT_bedKi 23.53
+  #define DEFAULT_bedKd 427.06
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -771,7 +770,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 0  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 60  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -2.5   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -2.55   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -881,7 +880,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 230
+#define Z_MAX_POS 250
 
 /**
  * Software Endstops
