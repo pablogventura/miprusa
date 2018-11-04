@@ -1190,7 +1190,7 @@ print TAN(PI/2-ACOS((AC*AC-AB*AB-AD*AD)/(2*AB*AD)))
  *    +-------------->X     +-------------->X     +-------------->Y
  *     XY_SKEW_FACTOR        XZ_SKEW_FACTOR        YZ_SKEW_FACTOR
  */
-#define SKEW_CORRECTION
+//#define SKEW_CORRECTION
 
 #if ENABLED(SKEW_CORRECTION)
   // Input all length measurements here:
