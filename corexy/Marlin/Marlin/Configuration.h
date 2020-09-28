@@ -490,10 +490,10 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-  // vulcano
-  #define DEFAULT_Kp 23.61
-  #define DEFAULT_Ki 1.93
-  #define DEFAULT_Kd 72.06
+  // e3d para cartucho sin cartucho
+  #define DEFAULT_Kp 19.40
+  #define DEFAULT_Ki 1.45
+  #define DEFAULT_Kd 64.75
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -994,7 +994,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 0, 60, -1.0 }
+#define NOZZLE_TO_PROBE_OFFSET { 0, 60, -1.3 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
